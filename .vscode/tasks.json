@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "c++ cmake",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": [
+                // "" // Собрать все с 3party
+                "full" // Собрать все и запустить тест
+                // "app" // Собрать только сам проект
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
